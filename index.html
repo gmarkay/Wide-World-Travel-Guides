@@ -12,7 +12,15 @@
 </head>
 <body ng-app='travelBooks'>
   <div ng-view></div>
-
+  <div ng-controller='BookCtrl'>
+      <h2>Book List</h2>
+  
+      <ul style='text-transform:capitalize' ng-repeat="book in bookList">
+        <strong>Title: {{book.title}}</strong>
+        <p>Type: {{book.type}}</p>
+        <p>Price: ${{book.price}}</p><br>
+      </ul>
+  </div>
 
   <script src="app.js"></script>
   <script src="controllers/bookCtrl.js"></script>
