@@ -4,7 +4,7 @@ angular.module('travelBooks', ['ngRoute'])
   .config($routeProvider => {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/books.html',
+        templateUrl: 'partials/guide-list.html',
         controller: 'BookCtrl'
       })
   });
